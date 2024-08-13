@@ -11,10 +11,10 @@ public class CountryService {
     @Autowired
     private CountriesClient countriesClient;
 
-    public String getIDDInfo() {
+    public String getIDDInfo(String pais) {
         try {
             // Obtém a resposta da API como uma String
-            String response = countriesClient.getCountryInfo("brazil");
+            String response = countriesClient.getCountryInfo(pais);
 
             // Cria um ObjectMapper para processar a resposta JSON
             ObjectMapper objectMapper = new ObjectMapper();

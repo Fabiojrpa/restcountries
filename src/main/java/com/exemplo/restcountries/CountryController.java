@@ -14,6 +14,6 @@ public class CountryController {
 
     @GetMapping("/brazil/idd")
     public String getCountryIDDInfo() {
-        return countryService.getIDDInfo();
+        return countryService.getIDDInfo("Brazil");
     }
 }
